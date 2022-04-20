@@ -1,6 +1,6 @@
 <?php
 
-namespace Edujugon\Laradoo\Providers;
+namespace Lanz1\Laradoo\Providers;
 
 use Lanz1\Laradoo\Odoo;
 use Illuminate\Support\ServiceProvider;

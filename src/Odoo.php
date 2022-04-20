@@ -7,7 +7,7 @@
  * Time: 16:04
  */
 
-namespace Edujugon\Laradoo;
+namespace Lanz1\Laradoo;
 
 use Lanz1\Laradoo\Exceptions\OdooException;
 use Illuminate\Support\Collection;

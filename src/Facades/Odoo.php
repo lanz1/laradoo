@@ -1,6 +1,6 @@
 <?php namespace Edujugon\Laradoo\Facades;
 
-use Illuminate\Support\Facades\Facade;
+use Lanz1\Support\Facades\Facade;
 
 class Odoo extends Facade {
 

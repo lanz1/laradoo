@@ -1,4 +1,4 @@
-<?php namespace Edujugon\Laradoo\Facades;
+<?php namespace Lanz1\Laradoo\Facades;
 
 use Lanz1\Support\Facades\Facade;
 

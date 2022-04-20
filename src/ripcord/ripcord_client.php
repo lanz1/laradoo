@@ -477,8 +477,12 @@ class  Ripcord_Transport_Stream implements Ripcord_Transport
 					'method' => "POST",
 					'header' => "Content-Type: text/xml",
 					'content' => $request
-				) 
-			) 
+				),
+				"ssl"=>array(
+					"verify_peer"=>false,
+					"verify_peer_name"=>false,
+				),
+			)
 		);
 		$context = stream_context_create( $options );
 		$result  = @file_get_contents( $url, false, $context );
@@ -546,7 +550,9 @@ class Ripcord_Transport_CURL implements Ripcord_Transport
 			CURLOPT_URL            => $url,
 			CURLOPT_POST           => true,
 			CURLOPT_POSTFIELDS     => $request,
-			CURLOPT_HEADER         => true
+			CURLOPT_HEADER         => true,
+			CURLOPT_SSL_VERIFYPEER => false,
+
 		);
 		curl_setopt_array( $curl, $options );
 		$contents = curl_exec( $curl );

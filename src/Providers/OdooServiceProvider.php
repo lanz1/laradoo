@@ -2,7 +2,7 @@
 
 namespace Edujugon\Laradoo\Providers;
 
-use Edujugon\Laradoo\Odoo;
+use Lanz1\Laradoo\Odoo;
 use Illuminate\Support\ServiceProvider;
 
 class OdooServiceProvider extends ServiceProvider
